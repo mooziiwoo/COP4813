@@ -1,0 +1,142 @@
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(
+        180deg,
+        #fffdf0, /* lighter yellow */
+        #f3fef9, /* very light mint */
+        #f8f3ff  /* very light lavender */
+    );
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+}
+/* Pastel Theme Variables */
+:root {
+    --mint: #c8f7e4;
+    --soft-yellow: #fff7c2;
+    --lavender: #e6d9ff;
+    --pink: #ffd6e8;
+    --text-dark: #333;
+    --text-light: #555;
+}
+
+/* Layout */
+header, main, footer {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #444;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Kawaii sparkle */
+h1::after, h2::after {
+    content: " ✧";
+    color: var(--pink);
+}
+
+.main-menu {
+    background: linear-gradient(
+        90deg,
+        var(--soft-yellow),
+        var(--mint),
+        var(--lavender)
+    );
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+/* Root menu list */
+.menu-root {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0; /* no hover gap */
+}
+
+.menu-root > li {
+    margin-right: 25px;
+    padding-bottom: 20px; /* bigger hover buffer */
+    position: relative;
+}
+
+.menu-section {
+    position: relative;
+}
+
+.submenu {
+    list-style: none;
+    padding: 10px;
+    padding-top: 15px; /* bigger buffer */
+    margin: 0;
+    margin-top: -10px; /* pulls submenu closer */
+    background: var(--lavender);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    position: absolute;
+    top: 35px;
+    left: 0;
+    display: none;
+    min-width: 160px;
+
+    z-index: 10; /* stays above everything */
+}
+
+.menu-section:hover .submenu {
+    display: block;
+}
+
+
+/* Submenu links */
+.submenu li a {
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Submenu hover */
+.submenu li a:hover {
+    background-color: var(--pink);
+}
+
+/* 🌸 Active Page Highlight */
+.main-menu a.active {
+    background-color: var(--pink);
+    color: #000;
+    font-weight: 700;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(255, 182, 193, 0.6);
+}
+
+/* 🌸 Main Content */
+main p {
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 15px;
+}
+
+/* 🌸 Footer */
+footer {
+    text-align: center;
+    color: var(--text-light);
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--mint);
+}
