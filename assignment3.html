@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 – Input Form</title>
+
+    <meta name="description" content="Assignment 3 input form with validation and confirmation.">
+    <meta name="author" content="Samantha Miller">
+    <meta name="keywords" content="COP4813, assignment 3, input form">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 3 – Input Form</h1>
+
+        <nav class="main-menu">
+            <ul class="menu-root">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="menu-section">My Assignments
+                    <ul class="submenu">
+                        <li><a href="assignment1.html">Assignment 1</a></li>
+                        <li><a href="assignment2.html">Assignment 2</a></li>
+                        <li><a href="assignment3.html" class="active">Assignment 3</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">My Classes
+                    <ul class="submenu">
+                        <li><a href="class1.html">COP4813</a></li>
+                        <li><a href="class2.html">COP4708</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">Favorites
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=7C2z4GqqS5E">Favorite Song</a></li>
+                        <li><a href="https://genshin.hoyoverse.com/en/">Favorite Game</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Information Form</h2>
+        <p>Please fill out all fields below. All entries will be validated before you can continue.</p>
+
+        <!-- 🌸 Form Wrapper -->
+        <div class="form-wrapper">
+            <form id="userForm">
+
+                <!-- Name -->
+                <label>First Name</label>
+                <input type="text" id="firstName">
+
+                <label>Last Name</label>
+                <input type="text" id="lastName">
+
+                <!-- Address -->
+                <label>Street Address</label>
+                <input type="text" id="street">
+
+                <label>City</label>
+                <input type="text" id="city">
+
+                <label>State (2 letters)</label>
+                <input type="text" id="state" maxlength="2">
+
+                <label>Zip Code</label>
+                <input type="text" id="zip" maxlength="5">
+
+                <!-- Phone -->
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="(000) 000-0000">
+
+                <!-- Email -->
+                <label>Email Address</label>
+                <input type="email" id="email">
+
+                <!-- Birthdate -->
+                <label>Birth Date</label>
+                <input type="date" id="birthdate">
+
+                <!-- Message -->
+                <label>Message</label>
+                <textarea id="message" rows="5"></textarea>
+
+                <!-- Mini Captcha -->
+                <label>Captcha</label>
+                <div class="captcha-box" id="captchaDisplay"></div>
+                <input type="text" id="captchaInput" placeholder="Enter the code">
+
+                <button type="button" onclick="validateForm()">Submit</button>
+            </form>
+        </div>
+
+        <!-- 🌸 Confirmation Box -->
+        <div id="confirmation-box" style="display:none;">
+            <h2>Please Confirm Your Information</h2>
+            <div id="confirmData"></div>
+
+            <button onclick="sendEmail()">Confirm</button>
+            <button onclick="goBack()">Go Back</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Samantha Miller</p>
+    </footer>
+
+    <!-- 🌸 External JavaScript -->
+    <script src="assignment3.js"></script>
+</body>
+</html>

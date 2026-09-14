@@ -140,3 +140,90 @@ footer {
     margin-top: 40px;
     border-top: 2px solid var(--mint);
 }
+/* 🌸 Form Container */
+.form-wrapper {
+    background: var(--lavender);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+/* 🌸 Form Labels */
+.form-wrapper label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+/* 🌸 Inputs */
+.form-wrapper input,
+.form-wrapper textarea,
+.form-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--mint);
+    background-color: #fff;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🌸 Input Focus */
+.form-wrapper input:focus,
+.form-wrapper textarea:focus,
+.form-wrapper select:focus {
+    border-color: var(--pink);
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,182,193,0.5);
+}
+
+/* 🌸 Submit Button */
+.form-wrapper button {
+    background: var(--mint);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-wrapper button:hover {
+    background: var(--pink);
+    box-shadow: 0 0 10px rgba(255,182,193,0.6);
+}
+
+/* 🌸 Confirmation Box */
+#confirmation-box {
+    background: var(--soft-yellow);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-top: 30px;
+    display: none;
+}
+
+#confirmation-box h2 {
+    color: var(--text-dark);
+}
+
+#confirmation-box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* 🌸 Captcha */
+.captcha-box {
+    background: var(--mint);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+    user-select: none;
+}
