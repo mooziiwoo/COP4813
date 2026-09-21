@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4 – Damped Harmonic Oscillator Calculator</title>
+
+    <meta name="description" content="Assignment 4 JavaScript calculator with plotting functionality.">
+    <meta name="author" content="Samantha Miller">
+    <meta name="keywords" content="COP4813, assignment 4, javascript calculator, plotting">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Plotly for graphing -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 4 – Damped Harmonic Oscillator Calculator</h1>
+
+        <nav class="main-menu">
+            <ul class="menu-root">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="menu-section">My Assignments
+                    <ul class="submenu">
+                        <li><a href="assignment1.html">Assignment 1</a></li>
+                        <li><a href="assignment2.html">Assignment 2</a></li>
+                        <li><a href="assignment3.html">Assignment 3</a></li>
+                        <li><a href="assignment4.html" class="active">Assignment 4</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">My Classes
+                    <ul class="submenu">
+                        <li><a href="class1.html">COP4813</a></li>
+                        <li><a href="class2.html">COP4708</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">Favorites
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=7C2z4GqqS5E">Favorite Song</a></li>
+                        <li><a href="https://genshin.hoyoverse.com/en/">Favorite Game</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Centered content -->
+    <div style="text-align:center;">
+
+        <h2 style="color:#8a6bb8; font-family:Arial;">Damped Harmonic Oscillator Calculator</h2>
+
+        <div style="font-family:Arial; padding:10px; background:#f6f0ff; border-radius:10px; width:350px; margin:auto;">
+            <label>A (Amplitude):</label><br>
+            <input id="A" value="5"><br><br>
+
+            <label>b (Damping Factor):</label><br>
+            <input id="b" value="0.2"><br><br>
+
+            <label>ω (Angular Frequency):</label><br>
+            <input id="w" value="2"><br><br>
+
+            <label>X Min:</label><br>
+            <input id="xmin" value="0"><br><br>
+
+            <label>X Max:</label><br>
+            <input id="xmax" value="20"><br><br>
+
+            <label>Step Size:</label><br>
+            <input id="step" value="0.1"><br><br>
+
+            <button onclick="run()" style="background:#bfa4ff; padding:10px; border:none; border-radius:8px; cursor:pointer;">
+                Compute & Plot
+            </button>
+        </div>
+
+        <div id="plot" 
+     style="margin-top:20px;
+            background:#f6f0ff;
+            border-radius:12px;
+            padding:20px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;">
+</div>
+
+
+
+        <h3 style="color:#8a6bb8; font-family:Arial;">Computed Values</h3>
+        <div id="solutions"></div>
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="assignment4.js"></script>
+
+</body>
+</html>
