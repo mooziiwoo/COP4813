@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samantha Miller – Spirograph Assignment</title>
+
+    <meta name="description" content="Spirograph drawing assignment for COP4813 using HTML5 Canvas and JavaScript.">
+    <meta name="author" content="Samantha Miller">
+    <meta name="keywords" content="COP4813, spirograph, canvas, JavaScript, assignment">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+
+        <nav class="main-menu">
+            <ul class="menu-root">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="menu-section">My Assignments
+                    <ul class="submenu">
+                        <li><a href="assignment1.html">Assignment 1</a></li>
+                        <li><a href="assignment2.html">Assignment 2</a></li>
+                        <li><a href="assignment3.html">Assignment 3</a></li>
+                        <li><a href="assignment4.html">Assignment 4</a></li>
+                        <li><a href="assignment5.html" class="active">Assignment 5</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">My Classes
+                    <ul class="submenu">
+                        <li><a href="class1.html">COP4813</a></li>
+                        <li><a href="class2.html">COP4708</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">Favorites
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=7C2z4GqqS5E">Favorite Song</a></li>
+                        <li><a href="https://genshin.hoyoverse.com/en/">Favorite Game</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Assignment 5 – Spirograph</h2>
+        <p>This assignment demonstrates a Spirograph drawn using JavaScript and the HTML5 Canvas element.</p>
+
+        <div id="controls" class="spiro-controls">
+            <label>R (outer radius):</label>
+            <input id="R" type="number" value="80" min="10" max="200">
+
+            <label>r (inner radius):</label>
+            <input id="r" type="number" value="30" min="5" max="200">
+
+            <label>O (pen offset):</label>
+            <input id="O" type="number" value="20" min="1" max="200">
+
+            <br><br>
+
+            <button id="startBtn">Start Drawing</button>
+            <button id="stopBtn">Stop Drawing</button>
+        </div>
+
+        <canvas id="canvas" width="600" height="600" class="spiro-canvas"></canvas>
+    </main>
+
+    <footer>
+        <p>Created by Samantha Miller</p>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="assignment5.js"></script>
+</body>
+</html>

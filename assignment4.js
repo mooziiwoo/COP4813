@@ -54,7 +54,9 @@ function run() {
         margin-left:auto;
         margin-right:auto;
         display:block;
+        text-align:center;
     ">
         ${tableHTML}
     </div>`;
 }
+

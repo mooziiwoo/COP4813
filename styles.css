@@ -231,3 +231,17 @@ footer {
     border-radius: 12px;
     overflow: hidden;
 }
+main {
+    text-align: center;
+}
+
+.spiro-controls {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spiro-canvas {
+    display: block;
+    margin: 20px auto;
+}
+
