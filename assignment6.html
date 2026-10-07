@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samantha Miller – Warframe JSON Assignment</title>
+
+    <meta name="description" content="Warframe stats JSON assignment for COP4813 using jQuery and external JSON data.">
+    <meta name="author" content="Samantha Miller">
+    <meta name="keywords" content="COP4813, JSON, jQuery, Warframe, assignment">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+
+        <nav class="main-menu">
+            <ul class="menu-root">
+                <li><a href="index.html">Home</a></li>
+
+                <li class="menu-section">My Assignments
+                    <ul class="submenu">
+                        <li><a href="assignment1.html">Assignment 1</a></li>
+                        <li><a href="assignment2.html">Assignment 2</a></li>
+                        <li><a href="assignment3.html">Assignment 3</a></li>
+                        <li><a href="assignment4.html">Assignment 4</a></li>
+                        <li><a href="assignment5.html">Assignment 5</a></li>
+                        <li><a href="assignment6.html" class="active">Assignment 6</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">My Classes
+                    <ul class="submenu">
+                        <li><a href="class1.html">COP4813</a></li>
+                        <li><a href="class2.html">COP4708</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-section">Favorites
+                    <ul class="submenu">
+                        <li><a href="https://www.youtube.com/watch?v=7C2z4GqqS5E">Favorite Song</a></li>
+                        <li><a href="https://genshin.hoyoverse.com/en/">Favorite Game</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Assignment 6 – Warframe JSON Data</h2>
+        <p>This assignment loads external JSON data containing my Warframe stats and displays them using jQuery.</p>
+
+        <table id="wfTable" class="data-table">
+            <tr>
+                <th>Name</th>
+                <th>Rank</th>
+                <th>HP</th>
+                <th>Shield</th>
+                <th>Armor</th>
+                <th>Energy</th>
+                <th>Sprint</th>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>Created by Samantha Miller</p>
+    </footer>
+
+    <!-- External files -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assignment6.js"></script>
+</body>
+</html>

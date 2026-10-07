@@ -245,3 +245,50 @@ main {
     margin: 20px auto;
 }
 
+.data-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Pastel Warframe Table Styling */
+.data-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.data-table th {
+    background: #c9b7ff; /* soft lavender */
+    color: #333;
+    padding: 12px;
+    font-size: 1.1em;
+}
+
+.data-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternating row colors */
+.data-table tr:nth-child(even) {
+    background: #f7f3ff;
+}
+
+.data-table tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+/* Hover effect */
+.data-table tr:hover {
+    background: #e9ddff;
+    transition: 0.2s;
+}
+
+header h1 {
+    text-align: center;
+}

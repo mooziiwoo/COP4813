@@ -1,0 +1,76 @@
+{
+  "warframes": [
+    {
+      "name": "Banshee",
+      "rank": 30,
+      "hp": 605,
+      "shield": 639,
+      "armor": 105,
+      "energy": 225,
+      "sprint": 1.1
+    },
+    {
+      "name": "Caliban",
+      "rank": 30,
+      "hp": 605,
+      "shield": 1123,
+      "armor": 500,
+      "energy": 380,
+      "sprint": 1.26
+    },
+    {
+      "name": "Excalibur",
+      "rank": 25,
+      "hp": 432,
+      "shield": 509,
+      "armor": 372,
+      "energy": 280,
+      "sprint": 1.0
+    },
+    {
+      "name": "Gauss Prime",
+      "rank": 30,
+      "hp": 370,
+      "shield": 1123,
+      "armor": 185,
+      "energy": 450,
+      "sprint": 2.18
+    },
+    {
+      "name": "Mirage Prime",
+      "rank": 30,
+      "hp": 300,
+      "shield": 708,
+      "armor": 185,
+      "energy": 450,
+      "sprint": 1.2
+    },
+    {
+      "name": "Nezha Prime",
+      "rank": 30,
+      "hp": 760,
+      "shield": 185,
+      "armor": 457,
+      "energy": 225,
+      "sprint": 1.2
+    },
+    {
+      "name": "Octavia Prime",
+      "rank": 20,
+      "hp": 556,
+      "shield": 587,
+      "armor": 160,
+      "energy": 245,
+      "sprint": 1.21
+    },
+    {
+      "name": "Valkyr",
+      "rank": 14,
+      "hp": 1145,
+      "shield": 160,
+      "armor": 855,
+      "energy": 120,
+      "sprint": 1.1
+    }
+  ]
+}
