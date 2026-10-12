@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7 – Feed Chia the Kitty!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <h1>Assignment 7 – Feed Chia the Kitty!</h1>
+
+    <nav class="main-menu">
+        <ul class="menu-root">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="menu-section">My Assignments
+                <ul class="submenu">
+                    <li><a href="assignment1.html">Assignment 1</a></li>
+                    <li><a href="assignment2.html">Assignment 2</a></li>
+                    <li><a href="assignment3.html">Assignment 3</a></li>
+                    <li><a href="assignment4.html">Assignment 4</a></li>
+                    <li><a href="assignment5.html">Assignment 5</a></li>
+                    <li><a href="assignment6.html">Assignment 6</a></li>
+                    <li><a href="assignment7.html">Assignment 7</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-section">My Classes
+                <ul class="submenu">
+                    <li><a href="class1.html">COP4813</a></li>
+                    <li><a href="class2.html">COP4708</a></li>
+                </ul>
+            </li>
+
+            <li class="menu-section">Favorites
+                <ul class="submenu">
+                    <li><a href="https://www.youtube.com/watch?v=7C2z4GqqS5E">Favorite Song</a></li>
+                    <li><a href="https://genshin.hoyoverse.com/en/">Favorite Game</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Feed Chia the Kitty!</h2>
+
+    <div id="food-area">
+        <img src="Chia/fish.png" id="fish" class="food" draggable="true">
+        <img src="Chia/milk.png" id="milk" class="food" draggable="true">
+        <img src="Chia/food.png" id="food" class="food" draggable="true">
+    </div>
+
+    <div id="chia-area">
+        <img src="Chia/chia.png" id="chia" class="chia">
+        <div id="bowl" class="dropzone">
+            <img src="Chia/bowl.png" class="bowl-img">
+            
+        </div>
+        
+    </div>
+    <div id="sparkles"></div>
+
+    <button id="reset-btn">Reset Game</button>
+    <p id="full-message" class="hidden">Chia is full and happy! ♥</p>
+
+
+</main>
+
+<footer>
+    <p>Created by Samantha Miller</p>
+</footer>
+
+<script src="assignment7.js"></script>
+</body>
+</html>
