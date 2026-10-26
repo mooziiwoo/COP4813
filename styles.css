@@ -393,3 +393,22 @@ header h1 {
     transform: translateY(-25px) scale(0.8);
   }
 }
+body {
+    text-align: center;
+    background-color: #fff9d9;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #b8860b;
+}
+
+canvas {
+    background: #fffef8;
+    border: 5px solid var(--soft-yellow);
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    display: block;
+    margin: 25px auto;
+}
