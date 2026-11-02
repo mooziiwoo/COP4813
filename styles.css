@@ -412,3 +412,71 @@ canvas {
     display: block;
     margin: 25px auto;
 }
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================
+   Mobile Responsive Layout
+   ========================== */
+
+@media screen and (max-width: 768px) {
+
+    header,
+    main,
+    footer {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .menu-root {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-root > li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .submenu {
+        position: static;
+        display: block;
+        margin-top: 5px;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .data-table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .chia {
+        width: 150px;
+    }
+
+    .bowl-img {
+        width: 140px;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
