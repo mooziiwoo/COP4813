@@ -1,4 +1,4 @@
-fetch("cms.json")
+fetch("cms.JSON")
     .then(response => response.json())
     .then(data => {
 
