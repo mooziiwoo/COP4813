@@ -1,0 +1,42 @@
+[
+  {
+    "name": "WordPress",
+    "support": "Open Source",
+    "technology": "PHP, MySQL/MariaDB",
+    "capabilities": "Themes, plugins, REST API, large community support",
+    "limitations": "Plugin security risks, frequent updates required",
+    "example": "https://wordpress.org/"
+  },
+  {
+    "name": "Drupal",
+    "support": "Open Source",
+    "technology": "PHP, MySQL/PostgreSQL",
+    "capabilities": "Powerful content management, API-first architecture, multilingual support",
+    "limitations": "Steeper learning curve than WordPress",
+    "example": "https://www.drupal.org/"
+  },
+  {
+    "name": "Joomla",
+    "support": "Open Source",
+    "technology": "PHP, MySQL/PostgreSQL",
+    "capabilities": "Templates, extensions, multilingual support, SEO tools",
+    "limitations": "Smaller ecosystem than WordPress",
+    "example": "https://www.joomla.org/"
+  },
+  {
+    "name": "Ghost",
+    "support": "Open Source",
+    "technology": "Node.js, MySQL",
+    "capabilities": "Blogging, newsletters, memberships, REST API",
+    "limitations": "Fewer plugins than WordPress",
+    "example": "https://ghost.org/"
+  },
+  {
+    "name": "Umbraco",
+    "support": "Open Source (.NET)",
+    "technology": "ASP.NET Core, SQL Server",
+    "capabilities": "Content management, multilingual content, headless CMS support",
+    "limitations": "Requires .NET knowledge",
+    "example": "https://umbraco.com/"
+  }
+]

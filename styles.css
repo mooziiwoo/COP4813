@@ -487,3 +487,59 @@ canvas {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.table-container {
+    overflow-x: auto;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fffafc;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(180, 151, 255, 0.2);
+}
+
+#cmsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#cmsTable th {
+    background: linear-gradient(
+        135deg,
+        #b497ff,
+        #d3bfff
+    );
+
+    color: white;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 14px;
+    text-align: center;
+}
+
+#cmsTable td {
+    padding: 12px;
+    border-bottom: 1px solid #ede5ff;
+    vertical-align: top;
+}
+
+#cmsTable tr:nth-child(even) {
+    background-color: #faf7ff;
+}
+
+#cmsTable tr:hover {
+    background-color: #efe7ff;
+    transition: background-color 0.3s;
+}
+
+#cmsTable a {
+    color: #8e69d8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#cmsTable a:hover {
+    color: #b497ff;
+    text-decoration: underline;
+}
